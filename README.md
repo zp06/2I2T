@@ -1,1 +1,2 @@
-# 2I2T
+# Aulas do segundo Trimestre 
+Arthur menotti N-2
