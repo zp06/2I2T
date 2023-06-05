@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(229, 111, 245);
+}
+
+.menu {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(142, 4, 255);
+}
+.conteudomsc {
+    width: 100%;
+}
+
+.rodape {
+    width: 100%;
+    background-color: rgb(159, 45, 253);
+    text-align: center  ;
+}
+/*parte das decrições*/
+.desc-estilo {
+    width: 100%;
+    background-color: brown;
+}
+
+.desc-solo {
+    width: 100%;
+    background-color: brown;
+}
+
+.desc-grupo {
+    width: 100%;
+    background-color: brown;
+}
+
+.desc-bandas {
+    width: 100%;
+    background-color: brown;
+}
+
+.desc-app {
+    width: 100%;
+    background-color: brown;
+}
+
+.img-in{
+    width: 100%;
+}
+@media screen and (min-width:   768px) {
+    .menu {
+        height: 120px;
+        background-color: cyan;
+        color: chartreuse;
+        font-size: 32px;
+    }
+    .img-in {
+        width: 50%;
+
+    }
+    .desc-solo{
+        display: grid;
+    }
+}
+
+@media screen and (min-width:   1280px) {
+    .menu {
+        height: 200px;
+        background-color: rgb(42, 18, 177);
+        color: chartreuse;
+        font-size: 64px;
+
+    }
+    
+}
+
+.img-in {
+    width: 25%;
+}
