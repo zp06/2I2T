@@ -1,2 +1,2 @@
-# Aulas do segundo Trimestre 
-Arthur menotti N-2
+Aulas do segundo trimestre
+Nome:michelangelo Numero: 26
