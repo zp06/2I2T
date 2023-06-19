@@ -1,50 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: black;
+body {
+    background-color: rgb(217, 253, 253);
 }
-.item{
-    width: 100px;
+.item {
     height: 100px;
-    background-color: yellow;
+    width: 100px;
+    background-color: aqua;
     margin-top: 10px;
     margin-left: 10px;
 }
-.conteudo{
+.conteudo {
     display: grid;
- grid-template-columns: 20% 20% 20% 20% ;
- justify-content: center;    
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
 }
-.meu-site{
+.meu-site {
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-template-areas:
-     "menu menu menu" 
-     "lado principal principal"
-     "rodape rodape rodape"
+    grid-template-areas: 
+     "menu menu menu"
+    "lado principal principal"
+    "rodape rodape rodape"
     ;
 }
- .menu{
+.menu {
     height: 10vh;
-    background-color: darkblue;
+    background-color: aquamarine;
     grid-area: menu;
- 
- }
- .lado{
+}
+.lado{
     height: 80vh;
-    background-color: rgba(0, 0, 255, 0.897);
-     grid-area: lado;
- }
- .principal{
+    background-color: rgb(0, 255, 255);
+    grid-area: lado;
+}
+
+.principal {
     height: 80vh;
-    background-color: rgba(40, 8, 219, 0.836);
+    background-color: rgb(40, 176, 255);
     grid-area: principal;
- }
- .rodape{
+}
+.rodape {
     height: 10vh;
-     background-color: rgba(6, 22, 252, 0.801);
-     grid-area: rodape; 
-     
- }
+    background-color: rgb(5, 157, 207);
+    grid-area: rodape;
+}
