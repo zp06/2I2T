@@ -1,49 +1,140 @@
 *{
     padding: 0;
     margin: 0;
-
 }
 body{
-    background-color: darkmagenta;
+    background-color: rgb(84, 84, 204);
 }
-.menu{
-    width: 100;
-    height: 60px;
-    background-color: blueviolet;
+:root{
+   --fundo: rgb(55, 55, 146);
+   --fonte: rgb(2, 195, 195);
+   --hover: rgb(0, 255, 225);
 
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    background-color: rgb(138, 138, 236);
+}
+.logo{
+    display: inline-block;
+    color: var (--fonte);
+    font-size: 32px;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--fundo);
+    overflow: hidden;
+}
+.nav a {
+    display: block;
+    padding: 30px;
+    color: var(--fonte);
+}
+.nav a:hover {
+    background-color: var(--hover);
+}
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.hamburguer {
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+}
+.hamb-line {
+    background: var(--fonte);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamb-line::before
+.hamb-line::after{
+    background: var(--fonte);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 2s ease-out;
+    width: 100%;
+}
+.hamb-line::before {
+    top: 5px;
+}
+.hamb-line::after {
+    top: -5px;
+}
+.side-menu {
+    display: none;
+}
+.side-menu:checked ~ nav {
+    max-width: 100%;
+}
+.side-menu:checked ~ .hamburguer .hamb-line {
+    background: transparent;
 }
 .conteudo-musica{
-     width: 100%;
-
+    width: 100%;
 }
 .rodape{
     width: 100%;
-    background-color: darkorchid;
-    text-align: center  ;
+    background-color: rgb(102, 188, 209);
+    text-align: center;
 }
 .desc-estilo{
-    width: 100;
-   background-color: rgb(5, 5, 248);
-
+    width: 100%;
+    background-color: rgb(228, 164, 80);
 }
 .desc-solo{
-    width: 100;
-background-color: rgb(2, 2, 187);
-
+    width: 100%;
+    background-color: rgb(240, 203, 155);
 }
 .desc-grupo{
-    width: 100;
-background-color: rgb(19, 0, 146);
-
+    width: 100%;
+    background-color: rgb(228, 164, 80);
 }
 .desc-banda{
-    width: 100;
-background-color: rgb(15, 0, 150) ;
+    width: 100%;
+    background-color: rgb(240, 203, 155);
 }
 .desc-app{
-    width: 100;
-background-color: rgb(8, 0, 117);
+    width: 100%;
+    background-color: rgb(228, 164, 80);
 }
 .img-ini{
     width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+ .menu{
+    height: 150px;
+    background-color: rgb(94, 94, 238);
+ }
+ .conteudo-musica{
+    display: flex;
+    direction: ltr;
+ 
+ }
+
+}
+ 
+@media screen and (min-width: 993px) and (max-width: 1080px){
+    .menu{
+       height: 200px;
+       background-color: rgb(37, 37, 241);
+    }
+    .conteudo-musica{
+       display: flex;
+       direction: rtl;
+    }
+   }
