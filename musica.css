@@ -90,7 +90,7 @@ ul{
 .rodape{
     width: 100%;
     background-color: rgb(102, 188, 209);
-    text-align: center;
+    text-align: center;clickjogos
 }
 .desc-estilo{
     width: 100%;
@@ -101,6 +101,200 @@ ul{
     background-color: rgb(240, 203, 155);
 }
 .desc-grupo{
+Desafio.html
+Estilo.css
+LICENSE
+README.md
+desafio.html
+download.jpeg
+estilo.css
+estudo.css
+estudogrid.html
+index.html
+lil nas x.jpeg
+musica.css
+pedras rolantes.webp
+Documentation • Share feedback
+Breadcrumbs2I2T
+/
+￼
+in
+main
+Cancel changes
+￼
+Commit changes...
+￼
+Edit
+￼
+Preview
+Indent mode
+￼
+Spaces
+Indent size
+￼
+4
+Line wrap mode
+￼
+No wrap
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+.hamb-line::after{
+    background: var(--fonte);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 2s ease-out;
+    width: 100%;
+}
+.hamb-line::before {
+    top: 5px;
+}
+.hamb-line::after {
+    top: -5px;
+}
+.side-menu {
+    display: none;
+}
+.side-menu:checked ~ nav {
+    max-width: 100%;
+}
+.side-menu:checked ~ .hamburguer .hamb-line {
+    background: transparent;
+}
+.conteudo-musica{
+    width: 100%;
+}
+.rodape{
+    width: 100%;
+    background-color: rgb(102, 188, 209);
+    text-align: center;clickjogos
+}
+.desc-estilo{
+    width: 100%;
+    background-color: rgb(228, 164, 80);
+}
+.desc-solo{
+    width: 100%;
+    background-color: rgb(240, 203, 155);
+}
+.desc-grupo{
+    width: 100%;
+    background-color: rgb(228, 164, 80);
+}
+.desc-banda{
+    width: 100%;
+    background-color: rgb(240, 203, 155);
+}
+.desc-app{
+    width: 100%;
+    background-color: rgb(228, 164, 80);
+}
+.img-ini{
+    width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+ .menu{
+    height: 150px;
+    background-color: rgb(94, 94, 238);
+ }
+ .conteudo-musica{
+    display: flex;
+    direction: ltr;
+ 
+ }
+
+}
+ 
+@media screen and (min-width: 993px) and (max-width: 1080px){
+    .menu{
+       height: 200px;
+       background-color: rgb(37, 37, 241);
+    }
+    .conteudo-musica{
+       display: flex;
+       direction: rtl;
+    }
+   }
+
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
     width: 100%;
     background-color: rgb(228, 164, 80);
 }
