@@ -1,334 +1,249 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: rgb(84, 84, 204);
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: salmon;
 }
-:root{
-   --fundo: rgb(55, 55, 146);
-   --fonte: rgb(2, 195, 195);
-   --hover: rgb(0, 255, 225);
+.conteudo-musica {
+    width: 100%;
+}
+.rodape {
+    width: 100%;
+    background-color: rgb(188, 204, 221);
+    text-align: center;
+}
+.desc-estilo {
+    width: 100%;
+    background-color: tan;
+}
 
+/*You're now entering: SoloCity, enjoy your stay!*/
+
+.desc-solo {
+    width: 100%;
+    background-color: teal;
+}
+.desc-grupoS {
+    width: 100%;
+    background-color: tan;
+}
+.desc-bandaS {
+    width: 100%;
+    background-color: teal;
+}
+.desc-appS {
+    width: 100%;
+    background-color: tan;
+}
+.img-s {
+    width: 1200px;
+    height:600px;
+}
+/*You're now leaving: SoloCity, not a fan of fertilizer are you? Weak.*/
+
+/*You're now entering: ROCKCity, do not make geology related puns, we've heard it before.*/
+.desc-ROCK {
+    width: 100%;
+    background-color: teal;
+}
+.desc-grupoR {
+    width: 100%;
+    background-color: tan;
+}
+.desc-bandaR {
+    width: 100%;
+    background-color: teal;
+}
+.desc-appR {
+    width: 100%;
+    background-color: tan;
+}
+.img-R {
+    width: 100%;
+}
+/*You're now leaving: ROCKCity, we hope a rock gets inside your shoe.*/
+
+
+
+.img-2 {
+    width: 100%;
+}
+.img-3 {
+    width: 100%;
+}
+
+
+
+.img-mobile{
+    width: 100%;
+}
+
+/*Que isso prof? explica pfv.*/
+@media screen and (min-width: 768px) {
+    .menu {
+        height: 120px;
+        background-color: blueviolet;
+        color: #FFF;
+        font-size: 32px;
+    }
+    .desc-solo {
+        display: flex;       
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        height: 200px;
+        background-color: rgb(121, 177, 121);
+        font-size: 64px;
+    }
+    .img-ini {
+        width: 50%;
+    }
+    .desc-solo {
+        display: grid;
+    }
+}
+
+/*eu to cansado, so vo checar o codigo dps.*/
+:root{
+    --fundo: rgba(255, 208, 0, 0.863);
+    --fonte: rgb(0, 0, 0);
+    --hover: rgb(46, 45, 1);
+
+
+}
+body{
+    background-color: rgba(245, 169, 6, 0.822);
 }
 a {
     text-decoration: none;
 }
+
 ul{
-    list-style: none;
+    list-style-type: none;
 }
 .header{
+
+    background-color: var(--fonte);
     width: 100%;
-    top: 0;
     position: sticky;
-    background-color: rgb(138, 138, 236);
+    top: 0;
+
 }
 .logo{
     display: inline-block;
-    color: var (--fonte);
-    font-size: 32px;
+   color: var(--fundo);
+   font-size: 32px;
+  
 }
+#logo{
+  height: 10vh;
+
+}
+.sites{
+    display: inline
+}
+/*^ com isso, eu durmo.*/
 .nav{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--fundo);
+    background: var(--fundo);
     overflow: hidden;
 }
-.nav a {
-    display: block;
-    padding: 30px;
+.menu2 a{
+    display: inline;
+    padding: 10px;
     color: var(--fonte);
+    
 }
-.nav a:hover {
+.menu2 a:hover{
     background-color: var(--hover);
 }
-.nav {
+.nav{
     max-height: 0;
-    transition: max-height .5s ease-out;
+    transition: max-height .1s ease-out;
 }
-.hamburguer {
+.hamburger{
     cursor: pointer;
     float: right;
-    padding: 30px 20px;
+    padding: 35px 20px;
 }
-.hamb-line {
+.hamb-line{
     background: var(--fonte);
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
+
 }
-.hamb-line::before
+.hamb-line::before,
 .hamb-line::after{
     background: var(--fonte);
     content: '';
     display: block;
     height: 100%;
     position: absolute;
-    transition: all 2s ease-out;
+    transition: all .2s ease-out;
     width: 100%;
 }
-.hamb-line::before {
+.hamb-line::before{
     top: 5px;
 }
-.hamb-line::after {
-    top: -5px;
-}
-.side-menu {
-    display: none;
-}
-.side-menu:checked ~ nav {
-    max-width: 100%;
-}
-.side-menu:checked ~ .hamburguer .hamb-line {
-    background: transparent;
-}
-.conteudo-musica{
-    width: 100%;
-}
-.rodape{
-    width: 100%;
-    background-color: rgb(102, 188, 209);
-    text-align: center;clickjogos
-}
-.desc-estilo{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.desc-solo{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
-.desc-grupo{
-Desafio.html
-Estilo.css
-LICENSE
-README.md
-desafio.html
-download.jpeg
-estilo.css
-estudo.css
-estudogrid.html
-index.html
-lil nas x.jpeg
-musica.css
-pedras rolantes.webp
-Documentation • Share feedback
-Breadcrumbs2I2T
-/
-￼
-in
-main
-Cancel changes
-￼
-Commit changes...
-￼
-Edit
-￼
-Preview
-Indent mode
-￼
-Spaces
-Indent size
-￼
-4
-Line wrap mode
-￼
-No wrap
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
 .hamb-line::after{
-    background: var(--fonte);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all 2s ease-out;
-    width: 100%;
-}
-.hamb-line::before {
-    top: 5px;
-}
-.hamb-line::after {
     top: -5px;
 }
-.side-menu {
+.side-menu{
     display: none;
 }
-.side-menu:checked ~ nav {
-    max-width: 100%;
+.side-menu:checked ~ nav{
+ max-height: 100%;
 }
-.side-menu:checked ~ .hamburguer .hamb-line {
+
+.side-menu:checked ~ .hamburger .hamb-line{
     background: transparent;
 }
-.conteudo-musica{
-    width: 100%;
+.side-menu:checked ~ .hamburger .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
 }
-.rodape{
-    width: 100%;
-    background-color: rgb(102, 188, 209);
-    text-align: center;clickjogos
+.side-menu:checked ~ .hamburger .hamb-line::after{
+    transform: rotate(+45deg);
+    top: 0;
 }
-.desc-estilo{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.desc-solo{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
-.desc-grupo{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.desc-banda{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
-.desc-app{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
+
+
 .img-ini{
     width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
- .menu{
-    height: 150px;
-    background-color: rgb(94, 94, 238);
- }
- .conteudo-musica{
-    display: flex;
-    direction: ltr;
- 
- }
-
-}
- 
-@media screen and (min-width: 993px) and (max-width: 1080px){
-    .menu{
-       height: 200px;
-       background-color: rgb(37, 37, 241);
-    }
-    .conteudo-musica{
-       display: flex;
-       direction: rtl;
-    }
+@media screen and (min-width: 768px){
+   .nav{
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
    }
-
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.desc-banda{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
-.desc-app{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.img-ini{
-    width: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 992px){
- .menu{
-    height: 150px;
-    background-color: rgb(94, 94, 238);
- }
- .conteudo-musica{
-    display: flex;
-    direction: ltr;
- 
- }
-
-}
- 
-@media screen and (min-width: 993px) and (max-width: 1080px){
-    .menu{
-       height: 200px;
-       background-color: rgb(37, 37, 241);
-    }
-    .conteudo-musica{
-       display: flex;
-       direction: rtl;
-    }
+   .menu{
+    float: left;
    }
+   .menu a:hover{
+    background-color: transparent;
+    color: var(--hover);
+   }
+   .hamburger{
+    display: none;
+   }
+   #logo{
+    width:25vh;
+    height: 25vh; 
+    
+
+   }
+    }

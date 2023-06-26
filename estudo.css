@@ -1,50 +1,56 @@
-* {
+
+*{
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: rgb(217, 253, 253);
+background-color:rgb(248, 241, 250) ;
 }
-.item {
+.item{
+    width: 370px;
     height: 100px;
-    width: 100px;
-    background-color: aqua;
-    margin-top: 10px;
+    background-color: deeppink;
+    color:antiquewhite;
+    margin: 10px;
     margin-left: 10px;
+
 }
-.conteudo {
+.conteudo{
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
+}
+.barra{
+    background-color: rgb(255, 178, 106);
+    height: 20vh;
+    grid-area: barra;
+}
+.principal{
+    background-color: rgb(192, 148, 4);
+    height: 70vh;
+    grid-area: principal;
+}
+.lado{
+    background-color: rgb(134, 89, 6);
+    height: 70vh;
+    grid-area: lado
+}
+.rodape{
+    background-color: rgb(187, 178, 141);
+    height: 10vh;
+    grid-area: rodape;
 }
 .meu-site {
     display: grid;
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: 20% 80%;
     grid-template-areas: 
-     "menu menu menu"
-    "lado principal principal"
-    "rodape rodape rodape"
-    ;
-}
-.menu {
-    height: 10vh;
-    background-color: aquamarine;
-    grid-area: menu;
-}
-.lado{
-    height: 80vh;
-    background-color: rgb(0, 255, 255);
-    grid-area: lado;
+                    "barra barra"
+                    "lado principal"
+                    "rodape rodape";
+
 }
 
-.principal {
-    height: 80vh;
-    background-color: rgb(40, 176, 255);
-    grid-area: principal;
-}
-.rodape {
-    height: 10vh;
-    background-color: rgb(5, 157, 207);
-    grid-area: rodape;
-}
+
+
+
+/*EU GASTEI 4 HORAS FAZENDO O CODIGO BONITINHO SO PARA PERDER ELE POR UM DEL, ISSO TUDO É PRA MAIS TARDE*/
